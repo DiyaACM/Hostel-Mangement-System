@@ -6,7 +6,7 @@ const Navhome = () => {
           <div class="navbar-header" >
             <Link to="/" class="navbar-brand" >Hostel Management</Link>
           </div>
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav" id = "homenav">
             <li class="active"><Link to="/User">Login</Link></li>
             <li><Link to="/User">Sign Up</Link></li>
           </ul>

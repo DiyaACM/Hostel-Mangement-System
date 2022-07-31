@@ -80,7 +80,7 @@
   .navbar{
     background-color: transparent;
   }
-  .navbar-nav{
+  #homenav{
     margin-right: 6%;
     font-family: segoe print;
     font-size: larger;
@@ -131,14 +131,15 @@ nav.navbar li a {
     color:#14A5FF;
   }
   .hostel-preview{
-    margin-bottom: 5%;
-    margin-left: 10%;
+    margin-bottom: 2%;
+    margin-left: 15%;
     margin-right: 10%;
     border-style: solid;
     border-color: #193B68;
-    padding: 3%;
+    padding: 2%;
     border-radius: 20px;
     background-color: white;
+    width: 70%;
   }
 
   .hostel-preview:hover{
@@ -153,9 +154,12 @@ nav.navbar li a {
  } 
 
  #nav{
-    background: rgb(20,210,255);
-    background: linear-gradient(90deg, rgba(20,210,255,1) 0%, rgba(20,165,255,1) 35%, rgba(20,235,255,1) 100%);
     margin-bottom: 3%;
+    background-color: #143b68;
+ }
+
+ #nav-bar{
+  color: black;
  }
 
  #search{
@@ -163,6 +167,12 @@ nav.navbar li a {
     padding-bottom: 5%;
     padding-left: 30% ;
     border-style: none;
+ }
+
+ .form-control{
+  font-family: arial black;
+  border-color: #14A5FF;
+  border-width: 2px;
  }
  
  

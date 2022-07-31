@@ -1,4 +1,4 @@
-import listlogo from './list.jpg';
+import listlogo from './hostel1.jpg';
 const HostelList = ({hostels}) => {
     return(
         <div className="hostel-list">
@@ -8,7 +8,7 @@ const HostelList = ({hostels}) => {
                 <table>
                     <tr>
                         <th><img src={listlogo}className="hostel-image"></img></th>
-                        <th><p>{hostel.body}<br></br><br></br></p><p style={{color: '#14A5FF'}}>{hostel.location}</p></th>
+                        <th><p>{hostel.body}<br></br><br></br></p><p style={{color: '#14A5FF'}}>Location: {hostel.location}</p></th>
                     </tr> 
                 </table>
             </div>
