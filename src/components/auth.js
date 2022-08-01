@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import firebase from 'firebase/compat';
+import firebase from 'firebase/compat/app';
 
-import { auth, db } from '../../firebase/firebase';
+import { auth, db } from '../firebase/firebase';
 
 import './Auth.css'
 
@@ -14,6 +14,7 @@ function SignIn() {
     const [username, setUsername] = useState('')
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
+    const [address, setAddress] = useState('')
     const [pass, setPass] = useState('')
     const [confirmPass, setConfirmPass] = useState('')
 
@@ -39,6 +40,7 @@ function SignIn() {
                             profilePhoto: 'https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png',
                             dateJoined: firebase.firestore.FieldValue.serverTimestamp(),
                             location: '',
+                            address,
                             dob: ''
                         });
                     }              
@@ -87,6 +89,13 @@ function SignIn() {
                                 <label>Phone</label>
                                 <input type="text" value={phone} onChange={(e) => setPhone(e.target.value.replace(/[^0-9]/g, ""))} placeholder='Phone' className='ls_input'/>
                             </div> 
+                        </div>
+                        <div className='ls_input_row'>
+                            <div className='ls_input_container'>
+                                <label>Address</label>
+                                <input type="text" value={address} onChange={(e) => setAddress(e.target.value)} placeholder='Address' className='ls_input'/>
+                            </div>
+                           
                         </div>
                         <div className='ls_input_row'>
                             <div className='ls_input_container'>
