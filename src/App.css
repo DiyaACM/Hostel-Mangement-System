@@ -210,6 +210,39 @@ nav.navbar li a {
   font-family: Roboto;
   font-size:20px;
  }
+
+ .profile{
+  position: relative;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-left:10%;
+  margin-right: 10%;
+  color: #1479FF;
+  font-size: 20px;
+  font-family: ;
+ }
+
+ .circle{
+  border-radius: 50%;
+  background-color: black;
+  padding: 8%;
+  margin-left: 42%;
+  margin-right: 40%;
+  height: 30vh;
+  width: 10vw;
+  margin-top: 3%;
+  
+ }
+
+ .profpic{
+  height: 20vh;
+  margin-left: 45%;
+  margin-right: 40%;
+  margin-top: 5%;
+  margin-bottom: 4%;
+ }
  
  
 
