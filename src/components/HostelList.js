@@ -7,7 +7,7 @@ const HostelList = ({hostels}) => {
                 <a href="\"><h2 className="hostel-title">{hostel.title}</h2></a>
                 <table>
                     <tr>
-                        <th><img src={listlogo}className="hostel-image"></img></th>
+                        <th><img src={hostel.image} className="hostel-image" /></th>
                         <th><p>{hostel.body}<br></br><br></br></p><p style={{color: '#14A5FF'}}>Location: {hostel.location}</p></th>
                     </tr> 
                 </table>
