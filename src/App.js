@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './components/Home'
 import User from './components/User';
+import Admin from './components/Admin';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />            
           <Route path="/User" element={<User />} />
           <Route path="/Home" element={<Home />} />
+          <Route path="/Admin" element={<Admin />} />
           
         </Routes>
       </Router>

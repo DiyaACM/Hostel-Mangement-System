@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 const Navhome = () => {
     return (  
-        <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <div class="navbar-header" >
+        <nav className="navbar navbar-expand-lg ">
+        <div className="container-fluid">
+          <div className="navbar-header" >
             <Link to="/" class="navbar-brand" >Hostel Management</Link>
           </div>
-          <ul class="nav navbar-nav" id = "homenav">
-            <li class="active"><Link to="/User">Login</Link></li>
-            <li><Link to="/User">Sign Up</Link></li>
+          <ul className="nav navbar-nav" id = "homenav">
+            <li className="active"><Link to="/User">Login</Link></li>
+            <li><Link to="/Admin">Sign Up</Link></li>
           </ul>
         </div>
       </nav>
