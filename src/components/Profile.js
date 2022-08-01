@@ -21,13 +21,13 @@ const Profile = () => {
     },[currentUser.uid])
     return (  
         <div className="profile">
-            <div class>
+            <div className="profcontent">
                 <img src={profileImage} className="profpic"/>
-                <p>Name: {profile_data?.name || ''}</p>
+                <p style={{wordSpacing :'50px'}}>Name: {profile_data?.name || ''}</p>
                 <hr></hr>
-                <p>Address: {profile_data?.address || ''}</p>
+                <p style={{wordSpacing :'20px'}}>Address: {profile_data?.address || ''}</p>
                 <hr></hr>
-                <p>Email: {profile_data?.email || ''}</p>
+                <p style={{wordSpacing :'50px'}}>Email: {profile_data?.email || ''}</p>
                 <hr></hr>
             </div>
            
