@@ -186,11 +186,29 @@ nav.navbar li a {
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 4%;
+  font-family: Roboto;
+  font-size:20px;
  }
  .line{
   text-align: justify;
   color: black;
   height: 20px;
+  
+ }
+
+ .HostelAdmin{
+  position: relative;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-left: 0%;
+  color: #1479FF;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 4%;
+  font-family: Roboto;
+  font-size:20px;
  }
  
  
