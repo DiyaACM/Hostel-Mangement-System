@@ -252,6 +252,55 @@ nav.navbar li a {
   font-weight: bold;
   font-size: 30px;
  }
+
+ .MH {
+  position: relative;
+  background: url("./img/mh.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-left: 0%;
+ 
+}
+
+#navmh{
+  margin-right: 3%;
+  font-family: calibri;
+  font-size: 21px;
+}
+
+.btnmh{
+  width: 10vw;
+  height: 7vh;
+  margin-right: 1%;
+  margin-left: 5%;
+  border-radius: 10px;
+  border-color: #1479FF;
+  border-width: 2pt;
+  color: #1479FF;
+  font-family: cursive;
+  font-size:medium;
+  font-weight: bold;
+}
+
+.btnmh:hover{
+  width: 10vw;
+  height: 7vh;
+  margin-right: 1%;
+  margin-left: 5%;
+  border-radius: 10px;
+  background-color: #1479FF;
+  color: white;
+  font-family: cursive;
+  font-size:medium;
+}
+
+.MHstudents{
+  font-size: 20px;
+  font-family: calibri;
+  margin-left: 10%;
+}
+  
  
 
 

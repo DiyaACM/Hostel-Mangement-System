@@ -4,6 +4,7 @@ import User from './components/User';
 import Admin from './components/Admin';
 import Profile from './components/Profile';
 import MH from './components/MH'
+import MHList from './components/MHList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -31,6 +32,7 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/login" element={<Login />} />
           <Route path="/MH" element={<MH />} />
+          <Route path="/MHList" element={<MHList />} />
         </Routes>
       </Router>
     </>

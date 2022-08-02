@@ -1,4 +1,3 @@
-import listlogo from '../img/hostel1.jpg';
 const HostelList = ({hostels}) => {
     return(
         <div className="hostel-list">
