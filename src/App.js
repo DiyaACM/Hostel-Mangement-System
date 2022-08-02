@@ -1,39 +1,60 @@
-import React from 'react';
-import Home from './components/Home'
-import User from './components/User';
-import Admin from './components/Admin';
-import Profile from './components/Profile';
-import MH from './components/MH'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import SignIn from './components/auth';
-import Login from './components/login';
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-  crossorigin="anonymous"
-/>
+import React from "react";
+import Home from "./components/home/home";
+import User from "./components/user/user";
+import Admin from "./components/admin/admin";
+import Profile from "./components/user/profile";
+import MH from "./components/mh/mh";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SignIn from "./components/auth/signin";
+import Login from "./components/auth/login";
+import HostelRegistration from "./components/user/hostelApplication";
+import HostelAdminSignup from "./components/auth/hostelAdminSignup";
+import "./components/auth/auth.css";
+import HostelAdmin from "./components/hostel/hostelAdmin";
+import EditHostel from "./components/hostel/editHostel";
+import ApplicationView from "./components/hostel/applications";
+import AdminSignup from "./components/auth/adminSignup";
+import AdminHostelList from "./components/admin/hostelsList";
+import AdminApplicationView from "./components/admin/hostelApplications";
+import AdminStudentsView from "./components/admin/studentsList";
 
 function App() {
   return (
     <div>
-     <>
-      { }
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />           
-          <Route path="/User" element={<User />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Admin" element={<Admin />} />
-          <Route path="/Profile" element={<Profile />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/MH" element={<MH />} />
-        </Routes>
-      </Router>
-    </>
+      <>
+        {}
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<User />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/MH" element={<MH />} />
+            <Route path="/hostel-admin" element={<HostelAdmin />} />
+            <Route path="/hostel-edit" element={<EditHostel />} />
+            <Route path="/register-hostel" element={<HostelAdminSignup />} />
+            <Route
+              path="/hostel-application/:id"
+              element={<HostelRegistration />}
+            />
+            <Route path="/hostel-applications" element={<ApplicationView />} />
+            <Route path="/register-admin" element={<AdminSignup />} />
+            <Route path="/admin-hostel-list" element={<AdminHostelList />} />
+            <Route
+              path="/admin-hostel-application/:id"
+              element={<AdminApplicationView />}
+            />
+            <Route
+              path="/admin-students-list"
+              element={<AdminStudentsView />}
+            />
+          </Routes>
+        </Router>
+      </>
     </div>
   );
 }
