@@ -3,7 +3,7 @@ import Home from "./components/home/home";
 import User from "./components/user/user";
 import Admin from "./components/admin/admin";
 import Profile from "./components/user/profile";
-import MH from "./components/mh/mh";
+import MH from "./components/mh/MH";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -19,6 +19,7 @@ import AdminSignup from "./components/auth/adminSignup";
 import AdminHostelList from "./components/admin/hostelsList";
 import AdminApplicationView from "./components/admin/hostelApplications";
 import AdminStudentsView from "./components/admin/studentsList";
+import MHList from "./components/mh/MHList";
 
 function App() {
   return (
@@ -33,7 +34,8 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/MH" element={<MH />} />
+            <Route path="/mh" element={<MH />} />
+            <Route path="/mh-list" element={<MHList />} />
             <Route path="/hostel-admin" element={<HostelAdmin />} />
             <Route path="/hostel-edit" element={<EditHostel />} />
             <Route path="/register-hostel" element={<HostelAdminSignup />} />
