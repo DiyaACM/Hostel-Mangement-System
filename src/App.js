@@ -3,6 +3,7 @@ import Home from './components/Home'
 import User from './components/User';
 import Admin from './components/Admin';
 import Profile from './components/Profile';
+import MH from './components/MH'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -22,13 +23,14 @@ function App() {
       { }
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />            
+          <Route path="/" element={<Home />} />           
           <Route path="/User" element={<User />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Admin" element={<Admin />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/MH" element={<MH />} />
         </Routes>
       </Router>
     </>
