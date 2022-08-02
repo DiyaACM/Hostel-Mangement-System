@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import logo from "../img/logo.png"
 const Navbar = () => {
     return (  
         <nav className="navbar navbar-expand-lg " id="nav">
         <div className="container-fluid">
           <div className="navbar-header" >
-            <Link to ="/Home" class="navbar-brand">Hostel Management</Link>
+          <Link to="/" class="navbar-brand" ><img  src = {logo} className="navlogo"/></Link>
           </div>
           <ul className="nav navbar-nav" id = "nav-bar">
             <li className="active"><Link to="/User">Home</Link></li>
