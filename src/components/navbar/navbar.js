@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import logo from "../../img/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
       <div className="container-fluid">
         <div className="navbar-header">
           <Link to="/home" className="navbar-brand">
-            Hostel Management
+            <img src={logo} className="navlogo" alt="logo" />
           </Link>
         </div>
         <ul className="nav navbar-nav" id="nav-bar">

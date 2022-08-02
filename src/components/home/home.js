@@ -9,7 +9,7 @@ const Home = () => {
           <Navhome />
         </div>
         <div className="container">
-          <p>Hostel Management</p>
+          <p>MECostel</p>
           <div className="container2">
             <p>
               One stop solution for MECians' to search for hostels.<br></br>
