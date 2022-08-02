@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import { db } from "../../firebase/firebase";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
+import logo from "../../img/logo.png";
 
 function EditHostel() {
   const { currentUser } = useContext(AuthContext);
@@ -69,9 +70,15 @@ function EditHostel() {
   }, [currentUser?.uid]);
 
   return (
-    <div className="loginSignin" style={{ marginTop: "-40px" }}>
-      <div className="ls__left">
-        <h3>Hostel Management System</h3>
+    <div className="loginSignin" style={{ marginTop: "-40px"}}>
+      <div className="ls__left" style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+      }}>
+        <Link to="/home">
+            <img src={logo} style={{height: "100px", width:"130px"}} alt="logo" />
+        </Link>
       </div>
       <div className="ls__right">
         <div className="ls__right_container">

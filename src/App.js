@@ -3,7 +3,7 @@ import Home from "./components/home/home";
 import User from "./components/user/user";
 import Admin from "./components/admin/admin";
 import Profile from "./components/user/profile";
-import MH from "./components/mh/MH";
+import MH from "./components/mh/mh";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
