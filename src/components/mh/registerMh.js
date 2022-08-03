@@ -4,7 +4,7 @@ import { db } from '../../firebase/firebase';
 import { collection, addDoc } from "firebase/firestore"
 import logo from "../../img/logo.png";
 import './registermh.css'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const RegisterMh = () => {
     const [name, setName] = useState("");
@@ -60,9 +60,9 @@ const RegisterMh = () => {
                     alignItems: "center",
                 }}
             >
-
-                <img src={logo} style={{ height: "100px", width: "130px" }} alt="logo" />
-
+                <Link to="/home">
+                    <img src={logo} style={{height: "100px", width:"130px"}} alt="logo" />
+                </Link>
             </div>
             <div className="rmh__right">
                 <div className="rmh__right_container">
@@ -113,8 +113,13 @@ const RegisterMh = () => {
                                 </select>
                             </div>
                             <div class="col-md-6">
+<<<<<<< Updated upstream
                                 <label for="inputAddress" class="form-label">Distance Form Residence</label>
                                 <input type="text" class="form-control" id="distance" placeholder="Enter distance in KM" required
+=======
+                                <label for="inputAddress" class="form-label">Distance From Residence</label>
+                                <input type="text" class="form-control" id="distance" placeholder="Enter distance in KM"
+>>>>>>> Stashed changes
                                     onChange={(event) => {
                                         setDistance(event.target.value);
                                     }} />
