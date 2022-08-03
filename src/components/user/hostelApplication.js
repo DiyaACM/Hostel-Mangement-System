@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import { db } from "../../firebase/firebase";
+import logo from "../../img/logo.png";
 
 function HostelRegistration() {
   const { currentUser } = useContext(AuthContext);
@@ -94,7 +95,7 @@ function HostelRegistration() {
   return (
     <div className="loginSignin">
       <div className="ls__left">
-        <h3>Inspiring Destinations Within Your Reach</h3>
+      <img src={logo} style={{height: "100px", width:"130px",marginTop:"55%"}} alt="logo" />
       </div>
       <div className="ls__right">
         <div className="ls__right_container">
