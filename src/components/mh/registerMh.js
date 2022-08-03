@@ -113,13 +113,9 @@ const RegisterMh = () => {
                                 </select>
                             </div>
                             <div class="col-md-6">
-<<<<<<< Updated upstream
-                                <label for="inputAddress" class="form-label">Distance Form Residence</label>
-                                <input type="text" class="form-control" id="distance" placeholder="Enter distance in KM" required
-=======
+                    
                                 <label for="inputAddress" class="form-label">Distance From Residence</label>
-                                <input type="text" class="form-control" id="distance" placeholder="Enter distance in KM"
->>>>>>> Stashed changes
+                                <input type="text" class="form-control" id="distance" placeholder="Enter distance in KM" required
                                     onChange={(event) => {
                                         setDistance(event.target.value);
                                     }} />
