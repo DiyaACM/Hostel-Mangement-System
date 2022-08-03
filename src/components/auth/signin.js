@@ -67,7 +67,7 @@ function SignIn() {
           alignItems: "center",
         }}
       >
-        <Link to="/home">
+        <Link to="/">
             <img src={logo} style={{height: "100px", width:"130px"}} alt="logo" />
         </Link>
       </div>
