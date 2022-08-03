@@ -18,7 +18,7 @@ const MH = () => {
                 <Link to="/mh-list">List of Alloted Students</Link>
               </li>
               <li className="active">
-                <Link to="/home">Register</Link>
+                <Link to="/register-mh">Register</Link>
               </li>
               <li>
                 <Link to="/profile">Profile</Link>
@@ -36,7 +36,7 @@ const MH = () => {
           </div>
           <button href="/" className="btnmh">
             {" "}
-            Register{" "}
+            <Link to="/register-mh">Register</Link>{" "}
           </button>
         </div>
       </div>
