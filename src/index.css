@@ -9,10 +9,10 @@
 :root {
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Montserrat", sans-serif;
-  --bg-color: #f5f0e1;
-  --primary-color: #1e3d59;
-  --secondary-color: #ff6e40;
-  --text-main: #1a1a1a;
+  --bg-color: white;
+  --primary-color: #143b68;
+  --secondary-color: #14A5FF;
+  --text-main: #143b68;
   --yellow: #ffc13b;
 }
 

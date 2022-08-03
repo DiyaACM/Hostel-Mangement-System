@@ -54,7 +54,7 @@ export default function AdminStudentsView() {
         <div className="hostel-list">
           {students.map((student, index) => (
             <div className="hostel-preview" key={index}>
-              <a href="\">
+              <a href="/admin-students-list">
                 <h2 className="hostel-title">{student.name}</h2>
               </a>
               <table>
