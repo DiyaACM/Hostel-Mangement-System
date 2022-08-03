@@ -20,6 +20,7 @@ import AdminHostelList from "./components/admin/hostelsList";
 import AdminApplicationView from "./components/admin/hostelApplications";
 import AdminStudentsView from "./components/admin/studentsList";
 import MHList from "./components/mh/MHList";
+import RegisterMh from "./components/mh/registerMh";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="/hostel-admin" element={<HostelAdmin />} />
             <Route path="/hostel-edit" element={<EditHostel />} />
             <Route path="/register-hostel" element={<HostelAdminSignup />} />
+            <Route path="/register-mh" element={<RegisterMh />} />
             <Route
               path="/hostel-application/:id"
               element={<HostelRegistration />}
