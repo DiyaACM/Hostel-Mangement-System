@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import firebase from "firebase/compat/app";
+import logo from "../../img/logo.png";
 
 import { auth, db } from "../../firebase/firebase";
 
@@ -66,7 +67,9 @@ function SignIn() {
           alignItems: "center",
         }}
       >
-        <h3 style={{ fontSize: "33px" }}>Hostel Management System</h3>
+        <Link to="/home">
+            <img src={logo} style={{height: "100px", width:"130px"}} alt="logo" />
+        </Link>
       </div>
       <div className="ls__right">
         <div className="ls__right_container">

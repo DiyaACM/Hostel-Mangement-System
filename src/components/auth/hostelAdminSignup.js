@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { auth, db } from "../../firebase/firebase";
 import firebase from "firebase/compat/app";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import logo from "../../img/logo.png";
 
 function HostelAdminSignUp() {
   const [name, setName] = useState("");
@@ -55,8 +56,14 @@ function HostelAdminSignUp() {
 
   return (
     <div className="loginSignin">
-      <div className="ls__left">
-        <h3>Hostel Management System</h3>
+      <div className="ls__left" style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+      }}>
+        <Link to="/home">
+            <img src={logo} style={{height: "100px", width:"130px"}} alt="logo" />
+        </Link>
       </div>
       <div className="ls__right">
         <div className="ls__right_container">

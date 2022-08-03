@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import logo from "../../img/logo.png";
 
 import { AuthContext } from "../../context/AuthContext";
 import { auth, db } from "../../firebase/firebase";
@@ -58,7 +59,9 @@ function AdminSignup() {
           alignItems: "center",
         }}
       >
-        <h3 style={{ fontSize: "33px" }}>Hostel Management System</h3>
+        <Link to="/home">
+            <img src={logo} style={{height: "100px", width:"130px"}} alt="logo" />
+        </Link>
       </div>
       <div className="ls__right">
         <div className="ls__right_container">
