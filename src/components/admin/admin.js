@@ -19,7 +19,7 @@ const Admin = () => {
   };
   return (
     <div className="admin">
-        <nav className="navbar navbar-expand-lg " id="nav">
+      <nav className="navbar navbar-expand-lg " id="nav">
         <div className="container-fluid">
           <div className="navbar-header">
             <Link to="/" className="navbar-brand">
@@ -39,12 +39,12 @@ const Admin = () => {
       <div className="admin-content">
         <Link to="/admin-students-list">List of Students</Link>
         <hr className="line"></hr>
-        <Link to="/List">List of Students-MH</Link>
+        <Link to="/mh-list">List of Students-MH</Link>
         <hr className="line"></hr>
         <Link to="/admin-hostel-list">List of Hostels</Link>
         <hr className="line"></hr>
       </div>
-     
+
     </div>
   );
 };
