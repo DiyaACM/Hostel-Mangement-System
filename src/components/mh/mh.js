@@ -30,8 +30,8 @@ const MH = () => {
           <p> MEC MH</p>
           <div className="container2">
             <p>
-              One stop solution for MECians' to search for hostels.<br></br>
-              Connecting with nearby hostels..
+               A Men's Hostel run by MEC and Mess run by Students, making it the best choice <br></br>
+              A second home away from Home..
             </p>
           </div>
           <button href="/" className="btnmh">

@@ -12,7 +12,7 @@ const Home = () => {
           <p>MECostel</p>
           <div className="container2">
             <p>
-              One stop solution for MECians' to search for hostels.<br></br>
+              One stop solution for MECians to search for hostels.<br></br>
               Connecting with nearby hostels..
             </p>
           </div>
@@ -20,7 +20,7 @@ const Home = () => {
             <Link to={"/login"}>Login</Link>
           </button>
           <button className="btn2">
-            <Link to={"/signin"}>Sign in</Link>
+            <Link to={"/signin"}>Sign Up</Link>
           </button>
           <button className="btn2" style={{ width: "150px" }}>
             <Link to={"/register-hostel"}>Register Hostel</Link>
