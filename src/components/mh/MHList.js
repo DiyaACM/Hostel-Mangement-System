@@ -13,6 +13,11 @@ const MHList = () => {
           if (doc.docs) {
             const studentData = [];
             doc.docs.forEach((d) => studentData.push(d.data()));
+
+            studentData.sort(function(a,b) { 
+              let cgpa1= parseFloat(a.cgpa);
+              let cgpa2= parseFloat(b.cgpa);
+              return cgpa2 - cgpa1;});
             setStudents(studentData);
           }
         })
