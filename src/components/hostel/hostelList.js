@@ -28,6 +28,18 @@ const HostelList = ({ hostels }) => {
                     Location: {hostel.hostelAddress}
                   </p>
                   <br></br>
+                  <p style={{ color: "#14A5FF" }}>
+                    Contact: {hostel.contact}
+                  </p>
+                  <br></br>
+                  <p style={{ color: "#14A5FF" }}>
+                    Capacity: {hostel.capacity}
+                  </p>
+                  <br></br>
+                  <p style={{ color: "#14A5FF" }}>
+                    Vacancy: {hostel.emptyRooms}
+                  </p>
+                  <br></br>
 
                   <button>
                     <Link to={`/hostel-application/${hostel.uid}`}>
